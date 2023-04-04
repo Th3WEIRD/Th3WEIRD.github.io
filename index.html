@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Week 3 task</title>
+    <link rel="stylesheet" href="index.css">
+ </link>
+    
+    </head>
+    <body>
+    
+    <div id="Header">
+        
+        <div class="headertabs">
+            <aside style="float: left; font-weight: bold; font-size: large;"> African Sasaeng; K-drama Community</aside> 
+            <a class="active" href="#"> Home</a> 
+            <a> News</a> 
+            <a> K-dramas</a> 
+            <a> Contact Us</a>
+            <a> Log In</a>
+          
+    </div>
+
+       
+    </div>
+
+    
+
+        <form id="Biodata" onsubmit="return validateForm()">
+            <table id="table" align="right">
+
+                <h2 id="subheading"> Join Our K-drama Community For Free  </h2>
+                    <p> Geek Over Your Favorites K-dramas and celebs..</p> 
+                <tr>
+                    <td>
+                      <p>Name:</p> 
+                    </td>
+                    <td>
+                        <input type="text" placeholder ="Name" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                      <p>Email:</p> 
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Email" name="mail" id="Email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Password:</p>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Password" name="Password" id="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Sign Up" id="submit">
+                    </td>
+                </tr>
+            
+</table>
+
+
+
+
+
+
+<script>
+    function validateForm() {
+        // Get form inputs
+        var name = document.forms["Biodata"]["name"].value;
+        var email = document.forms["Biodata"]["Email"].value;
+        var password = document.forms["Biodata"]["Password"].value;
+
+        // Check if any input fields are empty
+        if (name == "" || email == "" || password == "") {
+            alert("Please fill out all fields.");
+            return false;
+        }
+
+        // Show success message and prevent form from submitting
+        alert("Form submitted successfully!");
+        return false;
+    }
+</script>
+
+    </body>
+    </html>
+
+    
